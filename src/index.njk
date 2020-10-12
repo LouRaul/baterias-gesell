@@ -20,6 +20,16 @@ title: Minimal boilerplate for new projects built with Eleventy, Tailwind and Po
             <p x-show="open" @click.away="open = false">Something to hide</p>      
         </li>
     </ul>
+    <div x-data="{ open: false }">
+    <button @click="open = true">Open Dropdown</button>
+
+    <ul
+        x-show="open"
+        @click.away="open = false"
+    >
+        Dropdown Body
+    </ul>
+</div>
 
 </div>
 
