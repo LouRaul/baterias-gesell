@@ -11,11 +11,11 @@
     {% else %}
     <link rel="stylesheet" href="/static/app.compiled.css">
     {% endif %}
-    <script src="/static/app.bundled.js"></script>
+    
   </head>
   <body>
     <a href="#main" class="skip-link">Skip to main content</a>
     {{ content | safe }}
   </body>
-
+<script src="/static/app.bundled.js"></script>
 </html>
