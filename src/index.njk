@@ -1,42 +1,65 @@
 ---
 layout: base.njk
-title: Minimal boilerplate for new projects built with Eleventy, Tailwind and PostCSS
+title: Baterias Gesell
 ---
+<!-- Load Facebook SDK for JavaScript -->
+      <div id="fb-root"></div>
+      <script>
+        window.fbAsyncInit = function() {
+          FB.init({
+            xfbml            : true,
+            version          : 'v8.0'
+          });
+        };
 
-<main id="main" class="px-4 max-w-md mx-auto text-center">
-    <img src="/static/icon.svg" alt="Rocket icon" class="w-12 mx-auto my-4 rocket">
-    <h1 class="font-bold text-xl mb-2">JAMStack Web Starter <span class="font-light text-gray-500">v{{ pkg.version }}</span></h1>
-    <p>Minimal boilerplate for new projects built with Eleventy, Tailwind, PurgeCSS and PostCSS</p>
+        (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/es_ES/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
 
-    <ul class="md:flex my-4">
-        <li class="md:flex-auto p-2">
-            <a href="https://github.com/scottishstoater/jamstack-web-starter/zipball/master/" class="block no-underline leading-tight p-3 font-bold border-2 border-ws-blue-600 bg-ws-blue-500 text-white rounded hover:bg-ws-blue-600">Download</a>
-        </li>
-        <li class="md:flex-auto p-2">
-            <a href="https://github.com/scottishstoater/jamstack-web-starter#features" class="block no-underline text-black leading-tight p-3 font-bold border-2 rounded hover:bg-gray-100">Get started</a>
-        </li>
-        <li class="md:flex-auto p-2" x-data="{ open: false }">
-            <button @click="open = true" class="block no-underline text-black leading-tight p-3 font-bold border-2 rounded hover:bg-gray-100">Alpine.js to Test</button>
-            <p x-show="open" @click.away="open = false">Something to hide</p>      
-        </li>
-    </ul>
-    <div x-data="{ open: false }">
-    <button @click="open = true">Open Dropdowny</button>
+      <!-- Your Chat Plugin code -->
+      <div class="fb-customerchat"
+        attribution=setup_tool
+        page_id="101191381799937"
+  theme_color="#0A7CFF"
+  logged_in_greeting="Hola! ¿Como podemos ayudarte?"
+  logged_out_greeting="Hola! ¿Como podemos ayudarte?">
+      </div>
+<main id="main" class=" font-display h-screen cover-bg content-center flex flex-row">
+   <div class="m-auto w-full h-screen flex flex-col justify-between sm:justify-around">
+        <div class="mt-32">
+            <h1 class="sr-only">Baterias Gesell</h1>
+            <img class="m-auto sm:w-2/3 md:w-1/2 lg:w-1/3" src="/static/icon.svg" alt="Logo Baterias Gesell">
+            <p class="m-auto text-center font-bold text-xl sm:text-3xl text-gray-900">Entra un cliente, sale un amigo.</p>
+        </div>
 
-    <ul
-        x-show="open"
-        @click.away="open = false"
-    >
-        Dropdown Body
-    </ul>
-</div>
+        <div class="rounded-md bg-white shadow-md mx-2 mb-2 md:w-3/5 md:mx-auto">
+            <ul class="p-2 flex flex-wrap text-sm sm:text-base sm:py-4 flex-row justify-between md:px-8">
+                <li class="p-2 text-gray-800 hover:bg-red-100 rounded-sm hover:shadow">
+                    <a class="flex flex-row items-center" href="tel:011-4391-1008">
+                        <svg class="mr-2" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0V0z" fill="none"/><path fill="#CA1515" d="M22 5H2v14h20V5zM9 6c1.65 0 3 1.35 3 3s-1.35 3-3 3-3-1.35-3-3 1.35-3 3-3zm6 12H3v-1.41C3 14.08 6.97 13 9 13s6 1.08 6 3.58V18zm2.85-4h1.64L21 16l-1.99 1.99c-1.31-.98-2.28-2.38-2.73-3.99-.18-.64-.28-1.31-.28-2s.1-1.36.28-2c.45-1.62 1.42-3.01 2.73-3.99L21 8l-1.51 2h-1.64c-.22.63-.35 1.3-.35 2s.13 1.37.35 2z" opacity=".3"/><path  d="M2 21h20c1.1 0 1.99-.9 1.99-2L24 5c0-1.1-.9-2-2-2H2C.9 3 0 3.9 0 5v14c0 1.1.9 2 2 2zM2 5h20v14H2V5zm17.49 5L21 8l-1.99-1.99c-1.31.98-2.28 2.37-2.73 3.99-.18.64-.28 1.31-.28 2s.1 1.36.28 2c.45 1.61 1.42 3.01 2.73 3.99L21 16l-1.51-2h-1.64c-.22-.63-.35-1.3-.35-2s.13-1.37.35-2h1.64zM9 12c1.65 0 3-1.35 3-3s-1.35-3-3-3-3 1.35-3 3 1.35 3 3 3zm0-4c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zm0 5c-2.03 0-6 1.08-6 3.58V18h12v-1.41C15 14.08 11.03 13 9 13zm-3.52 3c.74-.5 2.22-1 3.52-1s2.77.49 3.52 1H5.48z"/></svg>
+                        011-4391-1008
+                    </a>
+                </li>
+                <li class="p-2 text-gray-800 hover:bg-red-100 rounded-sm hover:shadow">
+                    <a class="flex flex-row items-center" href="mailto:contacto@bateriasgesell.com.ar">
+                        <svg class="mr-2" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0V0z" fill="none"/><path fill="#CA1515" d="M20 8l-8 5-8-5v10h16zm0-2H4l8 4.99z" opacity=".3"/><path d="M4 20h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2zM20 6l-8 4.99L4 6h16zM4 8l8 5 8-5v10H4V8z"/></svg>
+                        contacto@bateriasgesell.com.ar
+                    </a>
+                </li>
+                <li class="p-2 text-gray-800 hover:bg-red-100 rounded-sm hover:shadow">
+                    <a class="flex flex-row items-center" href="https://www.google.com/maps/place/Bater%C3%ADas+Gesell/@-34.7960107,-58.2355161,15z/data=!4m5!3m4!1s0x0:0x86a23ee921743959!8m2!3d-34.7960107!4d-58.2355161">
+                        <svg class="mr-2" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0V0z" fill="none"/><path fill="#CA1515" d="M12 4C9.24 4 7 6.24 7 9c0 2.85 2.92 7.21 5 9.88 2.11-2.69 5-7 5-9.88 0-2.76-2.24-5-5-5zm0 7.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" opacity=".3"/><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zM7 9c0-2.76 2.24-5 5-5s5 2.24 5 5c0 2.88-2.88 7.19-5 9.88C9.92 16.21 7 11.85 7 9z"/><circle cx="12" cy="9" r="2.5"/></svg>
+                        Calle 29A n°878, Berazategui Oeste.
+                    </a>
+                </li>
+            </ul>
+            <iframe class="rounded-b-md" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3276.3948686107324!2d-58.23770478422002!3d-34.79600627520585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a3291fd03b9f01%3A0x86a23ee921743959!2sBater%C3%ADas%20Gesell!5e0!3m2!1ses-419!2sar!4v1603916496864!5m2!1ses-419!2sar" width="100%" height="150" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        
+        </div>
 
-</div>
-
-    <footer
-         class="text-sm text-gray-500">
-       <p class="flex items-center justify-center">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" class="w-4 mr-1"><path class="fill-current text-gray-100" d="M32 5H4C1.791 5 0 6.791 0 9v18c0 2.209 1.791 4 4 4h28c2.209 0 4-1.791 4-4V9c0-2.209-1.791-4-4-4z"/><path class="fill-current text-ws-blue-500" d="M13 18S0 8.586 0 8.895v18.21C0 27.414 13 18 13 18zm5 3S3.697 31 4.07 31h27.859C32.303 31 18 21 18 21zm5-3s13 9.414 13 9.105V8.895C36 8.586 23 18 23 18zm-5-3S3.697 5 4.07 5h27.859C32.303 5 18 15 18 15z"/></svg> <span>Proudly crafted in Scotland by <a href="https://www.chriscollins.me">Chris Collins</a></span></p>
-        <p>Go and build something great! 🥳</p>
-    </footer>
+   </div>
 </main>

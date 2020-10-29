@@ -1,12 +1,8 @@
 
 module.exports = {
   "title": "Baterias Gesell",
-  "description": "Minimal boilerplate for new projects built with Eleventy, Tailwind, PurgeCSS and PostCSS",
-  "url": "https://webstarter.chriscollins.me",
-  "author": "Chris Collins",
-  "meta_data": {
-    "twitter": "@scottishstoater",
-    "default_social_image": "/static/default_social_image.jpg"
-  },
+  "description": "Fabricación, instalación y mantenimiento de baterias con mas de 40 años de experiencia",
+  "url": "https://bateriasgesell.com.ar",
+  "author": "Baterias Gesell",
   "env": process.env.ELEVENTY_ENV === 'production'
 }

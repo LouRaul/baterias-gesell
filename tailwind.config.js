@@ -1,6 +1,10 @@
 module.exports = {
   theme: {
     extend: {
+      fontFamily: {
+        'display': ['Exo 2', 'sans-serif'],
+        'body': ['Inter', 'sans-serif'],
+      },
       colors: {
         'ws-blue': {
           100: '#E6F0FF',
@@ -13,6 +17,8 @@ module.exports = {
           800: '#003072',
           900: '#00204C',
         },
+        'red-gesell': '#CA1515',
+        'yellow-gesell': '#FFCB13',
       }
     },
   },
