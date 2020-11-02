@@ -2,8 +2,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'display': ['Exo 2', 'sans-serif'],
-        'body': ['Inter', 'sans-serif'],
+        'exo': ['"Exo 2"'],
+        'body': ['Inter'],
       },
       colors: {
         'ws-blue': {
