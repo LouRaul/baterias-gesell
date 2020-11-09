@@ -3,6 +3,7 @@ layout: base.njk
 title: Baterias Gesell
 ---
 <!-- Load Facebook SDK for JavaScript -->
+
       <div id="fb-root"></div>
       <script>
         window.fbAsyncInit = function() {
@@ -28,14 +29,274 @@ title: Baterias Gesell
   logged_in_greeting="Hola! ¿Como podemos ayudarte?"
   logged_out_greeting="Hola! ¿Como podemos ayudarte?">
       </div>
-<main id="main" class=" font-display h-screen bg-yellow-gesell content-center flex flex-row font-body">
-   <div class="m-auto w-full h-screen flex flex-col justify-between sm:justify-around">
-        <div class="mt-32">
-            <img class="m-auto sm:w-2/3 md:w-1/2 lg:w-1/3" src="/static/icon.svg" alt="Logo Baterias Gesell">
-            <h1 class="sr-only">Fabricación, instalcacion y mantenimiento de Baterias</h1>
-            <p class="font-exo m-auto text-center font-bold text-xl sm:text-3xl text-gray-900">Entra un cliente, sale un amigo.</p>
-        </div>
 
+ 
+
+
+
+
+
+
+
+
+
+
+
+<!--Navigation-->
+    <header class="border-b-4 border-red-gesell">
+        <div class="container mx-auto flex flex-row justify-between items-strech">
+            <a href="#" alt="Pagina principal" class="bg-yellow-gesell p-2">
+                <img src="/static/icon.svg" width="120px" alt="Logo Baterias Gesell">
+            </a>
+            <div class="px-4 hover:bg-yellow-200 flex justify-center items-center">
+                <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M31.5 27H12V24H31.5V27ZM31.5 19.5H16.5V16.5H31.5V19.5ZM31.5 9V12H12V9H31.5Z" fill="#27153E"/>
+                </svg>
+            </div>
+        </div>
+    </header>
+
+
+
+
+
+
+<main id="main">
+<!--Main banner-->
+    <div class="cover-bg grid grid-cols-3">
+        <div class="mx-4 flex flex-col justify-center md:justify-center align-start mt-4 col-span-2">
+            <h1 class="text-center md:text-left text-white text-3xl md:text-5xl font-exo font-extrabold antialiased uppercase leading-8 md:leading-10">Baterias potentes y confiables</h1>
+            <p class="text-center text-white text-lg font-body md:text-xl md:text-left mt-4 leading-6">Fabricacion, instalación y mantenimeinto de baterias con garantia de 12 meses.</p>
+            <button class="bg-yellow-gesell px-8 py-3 font-exo font-black text-dark-gesell flex-shrink mt-6">Contacto</button>
+        </div>
+    </div>
+    <div class="pt-6 bg-light-gesell">
+    <svg class="animate-bounce w-6 h-6 text-dark-gesell mx-auto" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+        <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+    </svg>  
+    </div>   
+
+
+
+<!--Servcios-->
+    <section class="bg-light-gesell pb-16 pt-8">
+        <div class="container mx-auto">
+            <h2 class="font-exo text-dark-gesell text-5xl font-extrabold italic mx-4 mb-6 sm:text-center">Servicios</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-8">
+                <div class="flex flex-row mx-4 mb-8 sm:flex-col sm:flex-grow-0">
+                    <img src="/static/Baterias.svg" alt="ilustracion de baterias">
+                    <div class="ml-4 sm:ml-0">
+                        <h3 class="font-exo font-bold text-xl text-dark-gesell sm:text-center">Baterias</h3>
+                        <p class=" font-body text-dark-gesell text-sm sm:text-center">Fabricacion e instalacion de todo tipo de baterias reforzadas con 12 meses de garantia.</p>
+                    </div>
+                </div>
+                <div class="flex flex-row mx-4 mb-8 sm:flex-col sm:flex-grow-0">
+                    <img src="/static/Reparacion.svg" alt="ilustracion de baterias">
+                    <div class="ml-4 sm:ml-0">
+                        <h3 class="font-exo font-bold text-xl text-dark-gesell sm:text-center">Reparación</h3>
+                        <p class=" font-body text-dark-gesell text-sm sm:text-center">Reparacion de bornes y roturas superficiales.</p>
+                    </div>
+                </div>
+                <div class="flex flex-row mx-4 mb-8 sm:flex-col sm:flex-grow-0">
+                    <img src="/static/Revision.svg" alt="ilustracion de baterias">
+                    <div class="ml-4 sm:ml-0">
+                        <h3 class="font-exo font-bold text-xl text-dark-gesell sm:text-center">Mantenimiento</h3>
+                        <p class=" font-body text-dark-gesell text-sm sm:text-center">Mantenimiento y control del sitema electrico <strong>sin cargo.</strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!--Baterias-->
+    <section class="pb-16 pt-8">
+        <div class="container mx-auto">
+             <h2 class="font-exo text-dark-gesell text-5xl font-extrabold italic mx-4 mb-6">Baterias</h2>
+             <div class="grid grid-cols-1 gap-3 sm:gap-4 sm:grid-cols-2 lg:grid-cols-3 lg:gap-5 mx-4">
+                <div class="shadow">
+                    <picture>
+                        <source srcset="/static/mobile/12voltsx35amp.webp" type="image/webp">
+                        <source srcset="/static/mobile/12voltsx35amp.jpeg" type="image/jpeg"> 
+                        <img src="/static/mobile/12voltsx35amp.jpeg" alt="Alt Text!">
+                    </picture>
+                    <div class="p-4">
+                        <h3 class="font-exo text-dark-gesell font-extrabold text-base">12 volts x 35 amp</h3>
+                        <p class="font-body text-sm text-gray-700">Bajo mantenimiento reforzada.</p>
+                    </div>
+                
+                </div>
+                <div class="shadow rounded-md">
+                    <picture>
+                        <source srcset="/static/mobile/12voltsx45amp.webp" type="image/webp">
+                        <source srcset="/static/mobile/12voltsx45amp.jpeg" type="image/jpeg"> 
+                        <img src="/static/mobile/12voltsx45amp.jpeg" alt="Alt Text!">
+                    </picture>
+                     <div class="p-4">
+                        <h3 class="font-exo text-dark-gesell font-extrabold text-base">12 volts x 45 amp</h3>
+                        <p class="font-body text-sm text-gray-700">Bajo mantenimiento reforzada.</p>
+                    </div>
+                </div>
+                <div class="shadow rounded-md">
+                    <picture>
+                        <source srcset="/static/mobile/12voltsx55amp.webp" type="image/webp">
+                        <source srcset="/static/mobile/12voltsx55amp.jpeg" type="image/jpeg"> 
+                        <img src="/static/mobile/12voltsx55amp.jpeg" alt="12 volts x 55 amp">
+                    </picture>
+                     <div class="p-4">
+                        <h3 class="font-exo text-dark-gesell font-extrabold text-base">12 volts x 35 amp (Nautica).</h3>
+                        <p class="font-body text-sm text-gray-700">Sin mantenimiento reforzada.</p>
+                    </div>
+                </div>
+                <div class="shadow rounded-md">
+                    <picture>
+                        <source srcset="/static/mobile/12voltsx70amp.webp" type="image/webp">
+                        <source srcset="/static/mobile/12voltsx70amp.jpeg" type="image/jpeg"> 
+                        <img src="/static/mobile/12voltsx70amp.jpeg" alt="12 volts x 70 amp">
+                    </picture>
+                     <div class="p-4">
+                        <h3 class="font-exo text-dark-gesell font-extrabold text-base">12 volts x 70 amp (Nautica)</h3>
+                        <p class="font-body text-sm text-gray-700">Sin mantenimiento reforzada.</p>
+                    </div>
+                </div>
+                <div class="shadow">
+                    <picture>
+                        <source srcset="/static/mobile/12voltsx70amp-bajo-mantenimiento.webp" type="image/webp">
+                        <source srcset="/static/mobile/12voltsx70amp-bajo-mantenimiento.jpeg" type="image/jpeg"> 
+                        <img src="/static/mobile/12voltsx70amp-bajo-mantenimiento.jpeg" alt="12 volts x 70 amp">
+                    </picture>
+                     <div class="p-4">
+                        <h3 class="font-exo text-dark-gesell font-extrabold text-base">12 volts x 70 amp</h3>
+                        <p class="font-body text-sm text-gray-700">Bajo mantenimiento reforzada.</p>
+                    </div>
+                </div>
+                <div class="shadow rounded-md">
+                    <picture>
+                        <source srcset="/static/mobile/12voltsx75amp(gnc).webp" type="image/webp">
+                        <source srcset="/static/mobile/12voltsx75amp(gnc).jpeg" type="image/jpeg"> 
+                        <img src="/static/mobile/12voltsx75amp(gnc).jpeg" alt="12 volts x 75 amp (GNC">
+                    </picture>
+                     <div class="p-4">
+                        <h3 class="font-exo text-dark-gesell font-extrabold text-base">12 volts x 75 amp (GNC)</h3>
+                        <p class="font-body text-sm text-gray-700">Bajo mantenimiento reforzada.</p>
+                    </div>
+                </div>
+                <div class="shadow rounded-md">
+                    <picture>
+                        <source srcset="/static/mobile/12voltsx75amp(gasolero).webp" type="image/webp">
+                        <source srcset="/static/mobile/12voltsx75amp(gasolero).jpeg" type="image/jpeg"> 
+                        <img src="/static/mobile/12voltsx75amp(gasolero).jpeg" alt="12 volts x 75 amp (Gasolero)">
+                    </picture>
+                     <div class="p-4">
+                        <h3 class="font-exo text-dark-gesell font-extrabold text-base">12 volts x 75 amp (Gasolero)</h3>
+                        <p class="font-body text-sm text-gray-700">Bajo mantenimiento reforzada.</p>
+                    </div>
+                </div>
+                <div class="shadow rounded-md">
+                    <picture>
+                        <source srcset="/static/mobile/12voltsx80amp(nautica).webp" type="image/webp">
+                        <source srcset="/static/mobile/12voltsx80amp(nautica).jpeg" type="image/jpeg"> 
+                        <img src="/static/mobile/12voltsx80amp(nautica).jpeg" alt="12 volts x 80 amp (Nautica)">
+                    </picture>
+                     <div class="p-4">
+                        <h3 class="font-exo text-dark-gesell font-extrabold text-base">12 volts x 80 amp (Nautica)</h3>
+                        <p class="font-body text-sm text-gray-700">Sin mantenimiento reforzada.</p>
+                    </div>
+                </div>
+                <div class="shadow rounded-md">
+                    <picture>
+                        <source srcset="/static/mobile/12voltsx90amp(4x4).webp" type="image/webp">
+                        <source srcset="/static/mobile/12voltsx90amp(4x4).jpeg" type="image/jpeg"> 
+                        <img src="/static/mobile/12voltsx90amp(4x4).jpeg" alt="12 volts x 90 amp altas (4x4)">
+                    </picture>
+                     <div class="p-4">
+                        <h3 class="font-exo text-dark-gesell font-extrabold text-base">12 volts x 90 amp "Alta" (4x4)</h3>
+                        <p class="font-body text-sm text-gray-700">Bajo mantenimiento reforzada.</p>
+                    </div>
+                </div>
+                <div class="shadow rounded-md">
+                    <picture>
+                        <source srcset="/static/mobile/12voltsx90amp(bora).webp" type="image/webp">
+                        <source srcset="/static/mobile/12voltsx90amp(bora).jpeg" type="image/jpeg"> 
+                        <img src="/static/mobile/12voltsx90amp(bora).jpeg" alt="12 volts x 90 amp(Bora)">
+                    </picture>
+                     <div class="p-4">
+                        <h3 class="font-exo text-dark-gesell font-extrabold text-base">12 volts x 90 amp (Bora)</h3>
+                        <p class="font-body text-sm text-gray-700">Bajo mantenimiento reforzada.</p>
+                    </div>
+                </div>
+                <div class="shadow rounded-md">
+                    <picture>
+                        <source srcset="/static/mobile/12voltsx110amp(Altas).webp" type="image/webp">
+                        <source srcset="/static/mobile/12voltsx110amp(Altas).jpeg" type="image/jpeg"> 
+                        <img src="/static/mobile/12voltsx110amp(Altas).jpeg" alt="12 volts x 110 amp Altas">
+                    </picture>
+                     <div class="p-4">
+                        <h3 class="font-exo text-dark-gesell font-extrabold text-base">12 volts x 110 amp "Alta"</h3>
+                        <p class="font-body text-sm text-gray-700">Bajo mantenimiento reforzada.</p>
+                    </div>
+                </div>
+                <div class="shadow rounded-md">
+                    <picture>
+                        <source srcset="/static/mobile/12voltsx110amp.webp" type="image/webp">
+                        <source srcset="/static/mobile/12voltsx110amp.jpeg" type="image/jpeg"> 
+                        <img src="/static/mobile/12voltsx110amp.jpeg" alt="12 volts x 110 amp Baja">
+                    </picture>
+                     <div class="p-4">
+                        <h3 class="font-exo text-dark-gesell font-extrabold text-base">12 volts x 110 amp "Baja"</h3>
+                        <p class="font-body text-sm text-gray-700">Bajo mantenimiento reforzada.</p>
+                    </div>
+                </div>
+                <div class="shadow rounded-md">
+                    <picture>
+                        <source srcset="/static/mobile/12voltsx180amp.webp" type="image/webp">
+                        <source srcset="/static/mobile/12voltsx180amp.jpeg" type="image/jpeg"> 
+                        <img src="/static/mobile/12voltsx180amp.jpeg" alt="12 volts x 180 amp">
+                    </picture>
+                     <div class="p-4">
+                        <h3 class="font-exo text-dark-gesell font-extrabold text-base">12 volts x 180 amp</h3>
+                        <p class="font-body text-sm text-gray-700">Sin mantenimiento reforzada.</p>
+                    </div>
+                </div>
+                <div class="shadow rounded-md">
+                    <picture>
+                        <source srcset="/static/mobile/6voltsx180amp.webp" type="image/webp">
+                        <source srcset="/static/mobile/6voltsx180amp.jpeg" type="image/jpeg"> 
+                        <img src="/static/mobile/6voltsx180amp.jpeg" alt="6 volts x 180 amp">
+                    </picture>
+                     <div class="p-4">
+                        <h3 class="font-exo text-dark-gesell font-extrabold text-base">6 volts x 180 amp</h3>
+                        <p class="font-body text-sm text-gray-700">Bajo mantenimiento reforzada.</p>
+                    </div>
+                </div>
+                <div class="shadow rounded-md">
+                    <picture>
+                        <source srcset="/static/mobile/6voltsx150amp.webp" type="image/webp">
+                        <source srcset="/static/mobile/6voltsx150amp.jpeg" type="image/jpeg"> 
+                        <img src="/static/mobile/6voltsx150amp.jpeg" alt="6 volts x 150 amp">
+                    </picture>
+                     <div class="p-4">
+                        <h3 class="font-exo text-dark-gesell font-extrabold text-base">6 volts x 150 amp</h3>
+                        <p class="font-body text-sm text-gray-700">Bajo mantenimiento reforzada.</p>
+                    </div>
+                </div>
+             </div>
+        </div>
+    
+    
+    </section>
+
+<!--Nosotros-->
+    <section class="bg-light-gesell pb-16 pt-8">
+        <div class="container mx-auto">
+            <h2 class="font-exo text-dark-gesell text-5xl font-extrabold italic mx-4 mb-6">Nosotros</h2>
+        </div>
+    </section>
+
+<!--Contacto-->
+    <section class="pt-8">
+        <div class="container mx-auto">
+            <h2 class="font-exo text-dark-gesell text-5xl font-extrabold italic mx-4 mb-6">Contacto</h2>
+        </div>
         <div class="rounded-md bg-white shadow-md mx-2 mb-2 md:w-3/5 md:mx-auto">
             <ul class="p-2 flex flex-wrap text-sm sm:text-base sm:py-4 flex-row justify-around md:px-8">
                 <li class="p-2 text-gray-800 hover:bg-red-100 rounded-sm hover:shadow">
@@ -60,6 +321,10 @@ title: Baterias Gesell
             <iframe class="rounded-b-md" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3276.3948686107324!2d-58.23770478422002!3d-34.79600627520585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a3291fd03b9f01%3A0x86a23ee921743959!2sBater%C3%ADas%20Gesell!5e0!3m2!1ses-419!2sar!4v1603916496864!5m2!1ses-419!2sar" width="100%" height="150" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         
         </div>
-
-   </div>
+    </section>
 </main>
+
+<!--Footer-->
+<footer class="bg-dark-gesell h-40">
+
+</footer>

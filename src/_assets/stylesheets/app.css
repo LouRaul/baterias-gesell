@@ -4,14 +4,119 @@
 
 /* purgecss start ignore */
 
+
+/*Background image*/
 .cover-bg{
-	background-image: url(../../static/Baterias-gesell-cover.jpg);
+	background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url(../../static/640.jpg);
+	height: 80vh;
 	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center bottom;
 }
 
 .cover-bg{
-	background-image: url(../../static/Baterias-gesell-cover.webp);
+	background:linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url(../../static/640.webp);
+	height: 80vh;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center bottom;
 
 }
+
+@media (max-width: 640px) { 
+	.cover-bg{
+		background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url(../../static/640.jpg);
+		height: 80vh;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center bottom;
+	
+	}
+	
+	.cover-bg{
+		background:linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url(../../static/640.webp);
+		height: 80vh;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center bottom;
+	}
+}
+
+@media (min-width: 641px) and (max-width: 768px) { 
+	.cover-bg{
+		background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url(../../static/768.jpg);
+		height: 80vh;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center bottom;
+		
+	}
+	
+	.cover-bg{
+		background:linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url(../../static/768.webp);
+		height: 80vh;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center bottom;
+	}
+}
+
+@media (min-width: 769px) and (max-width: 1024px) { 
+	.cover-bg{
+		background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url(../../static/1024.jpg);
+		height: 80vh;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center bottom;
+	}
+	
+	.cover-bg{
+		background:linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url(../../static/1024.webp);
+		height: 80vh;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center bottom;
+	}
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) { 
+	.cover-bg{
+		background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url(../../static/1280.jpg);
+		height: 80vh;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center bottom;
+		
+	}
+	
+	.cover-bg{
+		background:linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url(../../static/1280.webp);
+		height: 80vh;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center bottom;
+	}
+}
+
+
+
+@media (min-width: 1280px) { 
+	.cover-bg{
+		background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url(../../static/1920.jpg);
+		height: 80vh;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center bottom;
+	}
+	
+	.cover-bg{
+		background:linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url(../../static/1920.webp);
+		height: 80vh;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center bottom;
+	}
+}
+
 
 /* purgecss end ignore */

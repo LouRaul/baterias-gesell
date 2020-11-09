@@ -19,6 +19,8 @@ module.exports = {
         },
         'red-gesell': '#CA1515',
         'yellow-gesell': '#FFCB13',
+        'dark-gesell': '#27153E',
+        'light-gesell': '#FAF8F9',
       }
     },
   },
