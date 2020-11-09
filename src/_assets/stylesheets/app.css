@@ -3,8 +3,17 @@
 @import 'utils/_accessibility.css';
 
 /* purgecss start ignore */
-
-
+html{
+	scroll-behavior: smooth;
+}
+[x-cloak] {
+	display: none !important;
+}
+.link-underline:hover{
+	text-decoration-line: underline;
+	
+	text-decoration-color: #FFCB13 ;
+}
 /*Background image*/
 .cover-bg{
 	background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url(../../static/640.jpg);
