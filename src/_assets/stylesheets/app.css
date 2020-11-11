@@ -25,14 +25,7 @@ html{
 	background-position: center bottom;
 }
 
-.cover-bg{
-	background-image:linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url(../../static/640.webp);
-	height: 80vh;
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center bottom;
 
-}
 
 @media (max-width: 640px) { 
 	.cover-bg{
@@ -44,13 +37,7 @@ html{
 	
 	}
 	
-	.cover-bg{
-		background-image:linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url(../../static/640.webp);
-		height: 80vh; 
-		background-size: cover;
-		background-repeat: no-repeat;
-		background-position: center bottom;
-	}
+	
 }
 
 @media (min-width: 641px) and (max-width: 768px) { 
@@ -63,13 +50,7 @@ html{
 		
 	}
 	
-	.cover-bg{
-		background-image:linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url(../../static/768.webp);
-		height: 80vh; 
-		background-size: cover;
-		background-repeat: no-repeat;
-		background-position: center bottom;
-	}
+	
 }
 
 @media (min-width: 769px) and (max-width: 1024px) { 
@@ -80,14 +61,7 @@ html{
 		background-repeat: no-repeat;
 		background-position: center bottom;
 	}
-	
-	.cover-bg{
-		background-image:linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url(../../static/1024.webp);
-		height: 80vh;
-		background-size: cover;
-		background-repeat: no-repeat;
-		background-position: center bottom;
-	}
+
 }
 
 @media (min-width: 1025px) and (max-width: 1280px) { 
@@ -100,13 +74,6 @@ html{
 		
 	}
 	
-	.cover-bg{
-		background-image:linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url(../../static/1280.webp);
-		height: 80vh;
-		background-size: cover;
-		background-repeat: no-repeat;
-		background-position: center bottom;
-	}
 }
 
 
@@ -120,13 +87,6 @@ html{
 		background-position: center bottom;
 	}
 	
-	.cover-bg{
-		background-image:linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url(../../static/1920.webp);
-		height: 80vh; 
-		background-size: cover;
-		background-repeat: no-repeat;
-		background-position: center bottom;
-	}
 }
 
 
